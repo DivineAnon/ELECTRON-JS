@@ -269,14 +269,14 @@ sup {
 }
 
 a {
-  color: #3949ab;
+  color: #0267CA;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects
 }
 
 a:hover {
-  color: #3f51b5;
+  color: #0267CA;
   text-decoration: none
 }
 
@@ -645,7 +645,7 @@ kbd {
   padding: .2rem .4rem;
   font-size: 90%;
   color: #fff;
-  background-color: #3f51b5;
+  background-color: #0267CA;
   border-radius: .143rem
 }
 
@@ -1294,8 +1294,8 @@ pre code {
   }
 
   .col-md-6 {
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
+    -ms-flex: 0 0 40%;
+    flex: 0 0 40%;
     max-width: 50%
   }
 
@@ -2435,7 +2435,7 @@ pre code {
 
 .form-control.focus,
 .form-control:focus {
-  border-color: #3f51b5;
+  border-color: #0267CA;
   box-shadow: none
 }
 
@@ -3576,12 +3576,12 @@ fieldset:disabled a.btn {
 
 .btn-link {
   font-weight: 300;
-  color: #3949ab;
+  color: #0267CA;
   background-color: transparent
 }
 
 .btn-link:hover {
-  color: #3f51b5;
+  color: #0267CA;
   text-decoration: none;
   background-color: transparent;
   border-color: transparent
@@ -4239,7 +4239,7 @@ input[type=submit].btn-block {
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
   color: #fff;
-  background-color: #3f51b5;
+  background-color: #0267CA;
   border-color: #e0e0e0
 }
 
@@ -4256,7 +4256,7 @@ input[type=submit].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
   color: #fff;
-  background-color: #3f51b5
+  background-color: #0267CA
 }
 
 .nav-fill .nav-item {
@@ -5108,7 +5108,7 @@ input[type=submit].btn-block {
 
 .page-link:hover {
   z-index: 2;
-  color: #3f51b5;
+  color: #0267CA;
   text-decoration: none;
   background-color: #eee;
   border-color: #e0e0e0
@@ -5138,8 +5138,8 @@ input[type=submit].btn-block {
 .page-item.active .page-link {
   z-index: 1;
   color: #fff;
-  background-color: #3f51b5;
-  border-color: #3f51b5
+  background-color: #0267CA;
+  border-color: #0267CA
 }
 
 .page-item.disabled .page-link {
@@ -5545,7 +5545,7 @@ input[type=submit].btn-block {
 
 .list-group-item.active {
   z-index: 2;
-  color: #3f51b5;
+  color: #0267CA;
   background-color: transparent;
   border-color: transparent
 }
