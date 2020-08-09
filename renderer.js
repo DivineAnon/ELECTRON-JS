@@ -31,11 +31,11 @@ window.addEventListener("DOMContentLoaded", () => {
 
     window.maxUnmaxWindow();
     if (window.isWindowMaximized()) {
-      icon.classList.remove("fa-square");
-      icon.classList.add("fa-clone");
+      icon.classList.remove("fa fa-window-minimize");
+      icon.classList.add("fa fa-window-maximize");
     } else {
-      icon.classList.add("fa-square");
-      icon.classList.remove("fa-clone");
+      icon.classList.add("fa fa-window-minimize");
+      icon.classList.remove("fa fa-window-maximize");
     }
   });
   closeButton.addEventListener("click", e => {
