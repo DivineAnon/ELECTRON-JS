@@ -3697,10 +3697,10 @@ input[type=submit].btn-block {
   padding: 5px 0;
   margin: 5px 0 0;
   font-size: 1rem;
-  color: #757575;
+  color: #ffffff;
   text-align: left;
   list-style: none;
-  background-color: #fff;
+  background-color: #0267CA;
   background-clip: padding-box;
   border: 1px solid #e0e0e0;
   border-radius: .215rem
@@ -3826,7 +3826,7 @@ input[type=submit].btn-block {
   padding: .429rem .929rem;
   clear: both;
   font-weight: 300;
-  color: #757575;
+  color: #ffffff;
   text-align: inherit;
   white-space: nowrap;
   background-color: transparent;
