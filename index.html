@@ -2,33 +2,83 @@
 <html>
 
 <head>
-  <meta charset="UTF-8" />
-  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-
   <title>BODC CYBER APPS</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://kit.fontawesome.com/1c9144b004.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/vendor/animate/animate.css">
+  <link rel="stylesheet" type="text/css" href="assets/vendor/css-hamburgers/hamburgers.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/vendor/select2/select2.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/util.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
 </head>
 
 <body>
   <div id="menu-bar">
     <div class="left" role="menu">
-      <button class="menubar-btn" id="menu-btn"><i class="fas fa-bars"></i></button>
-      <h5>BODC CYBER APPS</h5>
+      <button class="menubar-btn" id="menu-btn"><i class="fa fa-bars"></i></button>
+      <h3 style="color: #ffffff;">WELCOME TO BODC</h3>
     </div>
     <div class="right">
-      <button class="menubar-btn" id="minimize-btn"><i class="fas fa-window-minimize"></i></button>
-      <button class="menubar-btn" id="max-unmax-btn"><i class="far fa-square"></i></button>
-      <button class="menubar-btn" id="close-btn"><i class="fas fa-times"></i></button>
+      <button class="menubar-btn" id="minimize-btn"><i class="fa fa-window-minimize"></i></button>
+      <button class="menubar-btn" id="max-unmax-btn"><i class="fa fa-window-maximize"></i></button>
+      <button class="menubar-btn" id="close-btn"><i class="fa fa-times"></i></button>
     </div>
   </div>
-  <div class="container">
-    Hello there!
+  <div class="limiter">
+    <div class="container-login100">
+      <div class="wrap-login100">
+        <div class="login100-pic js-tilt" data-tilt>
+          <img src="assets/images/img-01.png" alt="IMG">
+        </div>
+
+        <form class="login100-form validate-form">
+          <span class="login100-form-title">
+            <h3>Login BODC</h3>
+          </span>
+
+          <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+            <input class="input100" type="text" name="email" placeholder="Email">
+            <span class="focus-input100"></span>
+            <span class="symbol-input100">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+            </span>
+          </div>
+
+          <div class="wrap-input100 validate-input" data-validate="Password is required">
+            <input class="input100" type="password" name="pass" placeholder="Password">
+            <span class="focus-input100"></span>
+            <span class="symbol-input100">
+              <i class="fa fa-lock" aria-hidden="true"></i>
+            </span>
+          </div>
+
+          <div class="container-login100-form-btn">
+            <a href="" class="login100-form-btn">Login</a>
+          </div>
+        </form>
+      </div>
+    </div>
   </div>
 
   <!-- You can also require other files to run in this process -->
   <script src="./renderer.js"></script>
+  <script src="assets/vendor/jquery/jquery-3.2.1.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/popper.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/vendor/select2/select2.min.js"></script>
+  <script src="assets/vendor/tilt/tilt.jquery.min.js"></script>
+  <script>
+    $('.js-tilt').tilt({
+      scale: 1.1
+    })
+  </script>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>

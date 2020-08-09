@@ -10,7 +10,7 @@ body {
  justify-content: space-between;
  align-items: center;
  height: 30px;
- background: #34475a;
+ background: #0267CA;
  -webkit-app-region: drag;
 }
 
@@ -27,8 +27,8 @@ body {
 
 .container {
  height: calc(100vh - 30px);
- background: #34475ab0;
- color: white;
+ background: #FAFAFA;
+ color: #000000;
  display: flex;
  justify-content: center;
  align-items: center;
