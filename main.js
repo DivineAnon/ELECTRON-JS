@@ -2,7 +2,7 @@ const { app, BrowserWindow, ipcMain } = require("electron");
 const path = require("path");
 const { menu } = require("./menu");
 
-let mainWindow, imputerWindow;
+let mainWindow, imputerWindow, dailyReport, dailyActivity;
 
 const isWindows = process.platform === "win32";
 
@@ -25,8 +25,28 @@ function createWindow() {
     frame: isWindows ? false : true
   });
 
+  dailyReport = new BrowserWindow({
+    width: 800,
+    height: 600,
+    webPreferences: {
+      preload: path.join(__dirname, "preload.js")
+    },
+    frame: isWindows ? false : true
+  });
+  
+  dailyActivity = new BrowserWindow({
+    width: 800,
+    height: 600,
+    webPreferences: {
+      preload: path.join(__dirname, "preload.js")
+    },
+    frame: isWindows ? false : true
+  });
+
   mainWindow.loadFile("index.html");
   imputerWindow.loadFile("dashboard-imputer.html");
+  dailyReport.loadFile("daily-report.html");
+  dailyActivity.loadFile("daily-activity.html");
 
   mainWindow.on("closed", function() {
     mainWindow = null;
@@ -34,6 +54,14 @@ function createWindow() {
 
   imputerWindow.on("closed", function(){
     imputerWindow = null;
+  });
+  
+  dailyReport.on("closed", function(){
+    dailyReport = null;
+  });
+  
+  dailyActivity.on("closed", function(){
+    dailyActivity = null;
   });
 }
 
