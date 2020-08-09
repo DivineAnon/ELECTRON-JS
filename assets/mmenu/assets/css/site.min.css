@@ -639,7 +639,8 @@ body.site-gridmenu-active {
 .page {
   position: absolute;
   min-height: calc(100% - 44px);
-  background: #f1f4f5
+  background: #f1f4f5;
+  width: 100%;
 }
 
 .page-dark.layout-full {
@@ -686,7 +687,7 @@ body.site-gridmenu-active {
 }
 
 .page-content {
-  padding: 30px 30px
+  padding: 0px 30px
 }
 
 @media (max-width:479.98px) {
@@ -1378,7 +1379,6 @@ body.site-gridmenu-active {
 
 .site-menubar-fold .page,
 .site-menubar-fold .site-footer {
-  margin-left: 65px;
   transition: width .25s
 }
 

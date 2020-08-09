@@ -12,13 +12,8 @@ function createWindow() {
     height: 600,
     webPreferences: {
       preload: path.join(__dirname, "preload.js")
-      // (NOT RECOMMENDED)
-      // If true, we can skip attaching functions from ./menu-functions.js to window object in preload.js.
-      // And, instead, we can use electron APIs directly in renderer.js
-      // From Electron v5, nodeIntegration is set to false by default. And it is recommended to use preload.js to get access to only required Node.js apis.
-      // nodeIntegration: true
     },
-    frame: isWindows ? false : true //Remove frame to hide default menu
+    frame: isWindows ? false : true
   });
 
   imputerWindow = new BrowserWindow({
@@ -26,13 +21,8 @@ function createWindow() {
     height: 600,
     webPreferences: {
       preload: path.join(__dirname, "preload.js")
-      // (NOT RECOMMENDED)
-      // If true, we can skip attaching functions from ./menu-functions.js to window object in preload.js.
-      // And, instead, we can use electron APIs directly in renderer.js
-      // From Electron v5, nodeIntegration is set to false by default. And it is recommended to use preload.js to get access to only required Node.js apis.
-      // nodeIntegration: true
     },
-    frame: isWindows ? false : true //Remove frame to hide default menu
+    frame: isWindows ? false : true
   });
 
   mainWindow.loadFile("index.html");
@@ -63,13 +53,6 @@ ipcMain.on(`display-app-menu`, function(e, args) {
   if (isWindows && mainWindow) {
     menu.popup({
       window: mainWindow,
-      x: args.x,
-      y: args.y
-    });
-  }
-  if (isWindows && imputerWindow) {
-    menu.popup({
-      window: mainWimputerWindowindow,
       x: args.x,
       y: args.y
     });
