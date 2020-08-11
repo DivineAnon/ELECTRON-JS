@@ -122,17 +122,30 @@
       <li class="site-menu-item active">
         <a class="animsition-link" href="index.html">
           <i class="site-menu-icon icon md-home" style="font-size: 20px" aria-hidden="true"></i>
-          <span class="site-menu-title">All Data Report</span>
+          <span class="site-menu-title">Add Data Unit</span>
         </a>
       </li>
       <li class="site-menu-item has-sub">
         <a href="javascript:void(0)">
           <i class="site-menu-icon icon md-chart" style="font-size: 20px" aria-hidden="true"></i>
-          <span class="site-menu-title">Unit Status</span>
+          <span class="site-menu-title">User Management</span>
+        </a>
+      </li>
+      <li class="site-menu-item has-sub">
+        <a href="javascript:void(0)">
+          <i class="site-menu-icon icon md-trending-up" style="font-size: 20px" aria-hidden="true"></i>
+          <span class="site-menu-title">Data Management</span>
+        </a>
+      </li>
+      <li class="site-menu-item has-sub">
+        <a href="javascript:void(0)">
+          <i class="site-menu-icon icon md-calendar" style="font-size: 20px" aria-hidden="true"></i>
+          <span class="site-menu-title">Announcement</span>
         </a>
       </li>
     </ul>
   </div>
+
 
   <!-- Page -->
   <div class="page">
@@ -159,11 +172,10 @@
         <div class="panel" style="margin-left: 30px;">
           <header class="panel-heading text-center">
             <div class="panel-actions"></div>
-            <h1 class="panel-title" style="background:#0267ca; color: #fff; font-size: xx-large; text-align: left;">CCR
-              User</h1>
+            <h1 class="panel-title" style="background:#0267ca; color: #fff; font-size: large; text-align: left;">CCR User</h1>
           </header>
-          <div class="panel-body" style="background: #0267ca21;">
-            <table class="table table-hover dataTable table-striped w-full">
+          <div class="panel-body">
+            <table class="table table-hover dataTable table-striped w-full" data-plugin="dataTable">
               <thead>
                 <tr>
                   <th>NRP</th>
@@ -171,6 +183,8 @@
                   <th>Name</th>
                   <th>Rols</th>
                   <th>Create Date</th>
+                  <th></th>
+                  <th></th>
                 </tr>
               </thead>
               <tbody>
@@ -184,6 +198,7 @@
                     <a href="" class="button">
                       <i class="icon md-settings"></i>
                     </a>
+                  </td>
                   <td>
                     <a href="" class="button">
                       <i class="icon md-delete"></i>
