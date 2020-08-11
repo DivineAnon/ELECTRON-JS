@@ -24,6 +24,7 @@
     "electron-packager": "^15.0.0",
     "electron-squirrel-startup": "^1.0.0",
     "electron-winstaller": "^4.0.1",
-    "env": "0.0.2"
+    "env": "0.0.2",
+    "mysql": "^2.18.1"
   }
 }
