@@ -61,7 +61,7 @@ function createWindow() {
     frame: isWindows ? false : true
   });
 
-  mainWindow.loadFile("index.html");
+  mainWindow.loadFile("login.html");
   imputerWindow.loadFile("dashboard-imputer.html");
   dailyReport.loadFile("daily-report.html");
   dailyActivity.loadFile("daily-activity.html");
