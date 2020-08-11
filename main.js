@@ -51,12 +51,22 @@ function createWindow() {
     },
     frame: isWindows ? false : true
   });
+  
+  userManagementWindow = new BrowserWindow({
+    width: 800,
+    height: 600,
+    webPreferences: {
+      preload: path.join(__dirname, "preload.js")
+    },
+    frame: isWindows ? false : true
+  });
 
   mainWindow.loadFile("index.html");
   imputerWindow.loadFile("dashboard-imputer.html");
   dailyReport.loadFile("daily-report.html");
   dailyActivity.loadFile("daily-activity.html");
   superadminWindow.loadFile("dashboard-superadmin.html");
+  userManagementWindow.loadFile("SA-UserManagement.html");
 
 
   mainWindow.on("closed", function() {
