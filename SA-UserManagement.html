@@ -147,10 +147,12 @@
         <div class="card text-center" style="margin-left: 65px; width: 10rem; border: 1px solid black;">
           <div class="card-body">
             <h5 class="card-title">Add CCR User</h5>
-            <a href="#" class="btn" style="border: 1px solid black; width: 5rem;">+</a>
+            <button type="button" class="btn" style="border: 1px solid black; width: 5rem;" data-toggle="modal" data-target="#exampleModalLong">+</button>
           </div>
         </div>
       </div>
+
+
       <div class="page-content">
         <!-- Panel Basic -->
         <div class="panel" style="margin-left: 30px;">
@@ -194,6 +196,77 @@
       </div>
     </div>
   </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="background: #80808038;">
+        <h5 class="modal-title" id="exampleModalLongTitle">Add New CCR User</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="form-group">
+                <label>NRP</label>
+                <input type="text" class="form-control" name="">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label>First Name</label>
+                <input type="text" class="form-control" name="">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label>Last Name</label>
+                <input type="text" class="form-control" name="">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="form-group">
+                <label>Username</label>
+                <input type="text" class="form-control" name="">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="form-group">
+                <label>Role</label>
+                <select name="" class="form-control">
+                  <option value="">Data Evaluator</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="form-group">
+                <label>Password</label>
+                <input type="password" class="form-control" name="">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <button type="submit" style="width: 100%;" class="btn btn-primary">Save</button>     
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
   <!-- End Page -->
   <!-- Core  -->
   <script src="assets/global/vendor/babel-external-helpers/babel-external-helpers.js"></script>
