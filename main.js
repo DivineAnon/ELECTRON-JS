@@ -66,7 +66,7 @@ function createWindow() {
   dailyReport.loadFile("daily-report.html");
   dailyActivity.loadFile("daily-activity.html");
   superadminWindow.loadFile("sa-addunit.html");
-  userManagementWindow.loadFile("sa-usermanagement.html");
+  userManagementWindow.loadFile("add-daily-activity.html");
 
 
   mainWindow.on("closed", function() {
