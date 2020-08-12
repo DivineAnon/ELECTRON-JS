@@ -227,6 +227,19 @@
   <script src="assets/global/js/Plugin/peity.js"></script>
 
   <script src="assets/mmenu/assets/examples/js/dashboard/v1.js"></script>
+  <script>
+    const mysql = require('mysql');
+    const connection = mysql.createConnection({
+      host: process.env.HOST,
+      user: process.env.USER,
+      password: process.env.PASSWORD,
+      database: process.env.DATABASE
+    });
+    connection.connect((err) => {
+      if (err) throw err;
+      console.log('Connected!');
+    });
+  </script>
 </body>
 
 </html>
