@@ -65,8 +65,8 @@ function createWindow() {
   imputerWindow.loadFile("dashboard-imputer.html");
   dailyReport.loadFile("daily-report.html");
   dailyActivity.loadFile("daily-activity.html");
-  superadminWindow.loadFile("dashboard-superadmin.html");
-  userManagementWindow.loadFile("SA-UserManagement.html");
+  superadminWindow.loadFile("sa-addunit.html");
+  userManagementWindow.loadFile("sa-usermanagement.html");
 
 
   mainWindow.on("closed", function() {
