@@ -16,7 +16,7 @@ function createWindow() {
     frame: isWindows ? false : true
   });
 
-  mainWindow.loadFile("login.html");
+  mainWindow.loadFile("pages/login.html");
 
 
   mainWindow.on("closed", function() {
