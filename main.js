@@ -16,7 +16,7 @@ function createWindow() {
     frame: isWindows ? false : true
   });
 
-<<<<<<< HEAD
+// <<<<<<< HEAD
   imputerWindow = new BrowserWindow({
     width: 800,
     height: 600,
@@ -67,10 +67,10 @@ function createWindow() {
   dailyReport.loadFile("daily-report.html");
   dailyActivity.loadFile("daily-activity.html");
   superadminWindow.loadFile("sa-addunit.html");
-  userManagementWindow.loadFile("breakdown-information-radio.html");
-=======
+  userManagementWindow.loadFile("pages/Radio/add-breakdown-information.html");
+// =======
   mainWindow.loadFile("pages/login.html");
->>>>>>> 7edfffbb338ff378720127b4e521ae7e482ff307
+// >>>>>>> 7edfffbb338ff378720127b4e521ae7e482ff307
 
 
   mainWindow.on("closed", function() {
