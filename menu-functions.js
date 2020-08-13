@@ -4,9 +4,9 @@ function getCurrentWindow() {
   return remote.getCurrentWindow();
 }
 
-function openMenu(x, y) {
-  ipcRenderer.send(`display-app-menu`, { x, y });
-}
+// function openMenu(x, y) {
+//   ipcRenderer.send(`display-app-menu`, { x, y });
+// }
 
 function minimizeWindow(browserWindow = getCurrentWindow()) {
   if (browserWindow.minimizable) {
@@ -44,7 +44,7 @@ function isWindowMaximized(browserWindow = getCurrentWindow()) {
 
 module.exports = {
   getCurrentWindow,
-  openMenu,
+  // openMenu,
   minimizeWindow,
   maximizeWindow,
   unmaximizeWindow,
