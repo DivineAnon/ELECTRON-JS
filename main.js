@@ -2,7 +2,7 @@ const { app, BrowserWindow, ipcMain } = require("electron");
 const path = require("path");
 const { menu } = require("./menu");
 
-let mainWindow, imputerWindow, dailyReport, dailyActivity;
+let mainWindow;
 
 const isWindows = process.platform === "win32";
 
@@ -32,16 +32,4 @@ app.on("window-all-closed", function() {
 
 app.on("activate", function() {
   if (mainWindow === null) createWindow();
-  if (imputerWindow === null) createWindow();
-});
-
-// Register an event listener. When ipcRenderer sends mouse click co-ordinates, show menu at that point.
-ipcMain.on(`display-app-menu`, function(e, args) {
-  if (isWindows && mainWindow) {
-    menu.popup({
-      window: mainWindow,
-      x: args.x,
-      y: args.y
-    });
-  }
 });
