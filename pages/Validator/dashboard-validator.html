@@ -10,41 +10,29 @@
 
   <title>BODC CYBER APPS | IMPUTER</title>
 
-  <link rel="apple-touch-icon" href="assets/mmenu/assets/images/apple-touch-icon.png">
-  <link rel="shortcut icon" href="assets/mmenu/assets/images/favicon.ico">
-
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="assets/global/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/global/css/bootstrap-extend.min.css">
-  <link rel="stylesheet" href="assets/mmenu/assets/css/site.min.css">
+  <link rel="stylesheet" href="assets/global/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/global/css/bootstrap-extend.min.css" />
+  <link rel="stylesheet" href="assets/mmenu/assets/css/site.min.css" />
 
   <!-- Plugins -->
-  <link rel="stylesheet" href="assets/global/vendor/animsition/animsition.css">
-  <link rel="stylesheet" href="assets/global/vendor/asscrollable/asScrollable.css">
-  <link rel="stylesheet" href="assets/global/vendor/switchery/switchery.css">
-  <link rel="stylesheet" href="assets/global/vendor/intro-js/introjs.css">
-  <link rel="stylesheet" href="assets/global/vendor/slidepanel/slidePanel.css">
-  <link rel="stylesheet" href="assets/global/vendor/jquery-mmenu/jquery-mmenu.css">
-  <link rel="stylesheet" href="assets/global/vendor/flag-icon-css/flag-icon.css">
-  <link rel="stylesheet" href="assets/global/vendor/waves/waves.css">
-  <link rel="stylesheet" href="assets/global/vendor/datatables.net-bs4/dataTables.bootstrap4.css">
-  <link rel="stylesheet"
-    href="assets/global/vendor/datatables.net-fixedheader-bs4/dataTables.fixedheader.bootstrap4.css">
-  <link rel="stylesheet"
-    href="assets/global/vendor/datatables.net-fixedcolumns-bs4/dataTables.fixedcolumns.bootstrap4.css">
-  <link rel="stylesheet" href="assets/global/vendor/datatables.net-rowgroup-bs4/dataTables.rowgroup.bootstrap4.css">
-  <link rel="stylesheet" href="assets/global/vendor/datatables.net-scroller-bs4/dataTables.scroller.bootstrap4.css">
-  <link rel="stylesheet" href="assets/global/vendor/datatables.net-select-bs4/dataTables.select.bootstrap4.css">
-  <link rel="stylesheet" href="assets/global/vendor/datatables.net-responsive-bs4/dataTables.responsive.bootstrap4.css">
-  <link rel="stylesheet" href="assets/global/vendor/datatables.net-buttons-bs4/dataTables.buttons.bootstrap4.css">
-  <link rel="stylesheet" href="assets/mmenu/assets/examples/css/tables/datatable.css">
-
+  <link rel="stylesheet" href="assets/global/vendor/animsition/animsition.css" />
+  <link rel="stylesheet" href="assets/global/vendor/asscrollable/asScrollable.css" />
+  <link rel="stylesheet" href="assets/global/vendor/switchery/switchery.css" />
+  <link rel="stylesheet" href="assets/global/vendor/intro-js/introjs.css" />
+  <link rel="stylesheet" href="assets/global/vendor/slidepanel/slidePanel.css" />
+  <link rel="stylesheet" href="assets/global/vendor/jquery-mmenu/jquery-mmenu.css" />
+  <link rel="stylesheet" href="assets/global/vendor/flag-icon-css/flag-icon.css" />
+  <link rel="stylesheet" href="assets/global/vendor/waves/waves.css" />
+  <link rel="stylesheet" href="assets/global/vendor/chartist/chartist.css" />
+  <link rel="stylesheet" href="assets/global/vendor/jvectormap/jquery-jvectormap.css" />
+  <link rel="stylesheet" href="assets/global/vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.css" />
+  <link rel="stylesheet" href="assets/mmenu/assets/examples/css/dashboard/v1.css" />
 
   <!-- Fonts -->
-  <link rel="stylesheet" href="assets/global/fonts/font-awesome/font-awesome.css">
-  <link rel="stylesheet" href="assets/global/fonts/material-design/material-design.min.css">
-  <link rel="stylesheet" href="assets/global/fonts/brand-icons/brand-icons.min.css">
-  <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
+  <link rel="stylesheet" href="assets/global/fonts/material-design/material-design.min.css" />
+  <link rel="stylesheet" href="assets/global/fonts/brand-icons/brand-icons.min.css" />
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic" />
 
   <!-- Scripts -->
   <script src="assets/global/vendor/breakpoints/breakpoints.js"></script>
@@ -93,6 +81,11 @@
         <!-- Navbar Toolbar Right -->
         <ul class="nav navbar-toolbar navbar-right navbar-toolbar-right">
           <li class="nav-item dropdown">
+            <a href="" class="nav-link waves-effect waves-light waves-round">
+              <i class="icon md-arrow-left" style="font-size: 20px;">&nbsp;Back</i>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
             <a class="nav-link navbar-avatar" data-toggle="dropdown" href="#" aria-expanded="false"
               data-animation="scale-up" role="button">
               <span class="avatar avatar-online">
@@ -104,7 +97,7 @@
               <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon md-account"
                   aria-hidden="true"></i> User</a>
               <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon md-accounts-list"
-                  aria-hidden="true"></i> Data Imputer</a>
+                  aria-hidden="true"></i> Data Evaluator</a>
               <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon md-calendar"
                   aria-hidden="true"></i> 15 April 2020</a>
               <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon md-power"
@@ -128,7 +121,13 @@
       <li class="site-menu-item has-sub">
         <a href="javascript:void(0)">
           <i class="site-menu-icon icon md-chart" style="font-size: 20px" aria-hidden="true"></i>
-          <span class="site-menu-title">Unit Status</span>
+          <span class="site-menu-title">Daily Report</span>
+        </a>
+      </li>
+      <li class="site-menu-item has-sub">
+        <a href="javascript:void(0)">
+          <i class="site-menu-icon icon md-time" style="font-size: 20px" aria-hidden="true"></i>
+          <span class="site-menu-title">Hourly Report</span>
         </a>
       </li>
     </ul>
@@ -139,67 +138,75 @@
     <div class="page-content container-fluid">
       <div class="row" data-plugin="matchHeight" data-by-row="true">
         <div class="col-xl-12 col-md-12 text-left mb-15">
-          <h2 style="color: #000000; margin-left: 65px;"><b>DAILY REPORT (TIMESHEET)</b></h2>
+          <h2 style="color:#9C3112; margin-left: 65px;"><b>CCR SYSTEM</b></h2>
+          <h4 style="margin-left: 65px;"><b>Evaluator System</b></h4>
         </div>
-      </div>
-      <div class="container">
-        <form class="form-inline mb-20">
-          <p style="color: #000000; margin-left: 50px; margin-top: 10px !important; margin-right: 5px;">nomor unit :</p>
-          <input type="text" class="form-control" name="type_numberic" placeholder="nomor unit"
-            style="margin-right: 5px;">
-          <a href="" class="btn btn-raised btn-primary btn-block waves-effect waves-classic" style="width: 10%;">
-            Add
-          </a>
-        </form>
-        <p style="color: #000000; margin-left: 45px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
-          accusamus corporis sequi in reiciendis minus
-          doloribus harum quisquam deleniti libero velit, facere fugit at sunt nesciunt earum placeat quo rem!</p>
-      </div>
-      <div class="page-content">
-        <!-- Panel Basic -->
-        <div class="panel" style="margin-left: 30px;">
-          <header class="panel-heading text-center">
-            <div class="panel-actions"></div>
-            <h1 class="panel-title" style="background:#0267ca; color: #fff; font-size: large; text-align: left;">Unit
-              Status</h1>
-          </header>
-          <div class="panel-body mt-10">
-            <table class="table table-hover dataTable table-striped w-full" data-plugin="dataTable">
-              <thead>
-                <tr>
-                  <th>Unit</th>
-                  <th>Proses</th>
-                  <th>Aktivitas</th>
-                  <th>Loading Point</th>
-                  <th>Dumping Area</th>
-                  <th>Total Ritasi</th>
-                  <th>Status</th>
-                  <th>action</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Damon</td>
-                  <td>5516 Adolfo Green</td>
-                  <td>Littelhaven</td>
-                  <td>85</td>
-                  <td>2014/06/13</td>
-                  <td>$553,536</td>
-                  <td>$553,536</td>
-                  <td>
-                    <a href="" class="button mr-10">
-                      <i class="icon md-edit"></i>
+        <div class="container" style="padding-left: 13.0715rem; padding-right: 13.0715rem;">
+          <div class="row">
+            <div class="col-6 col-md-6 col-sm-12" style="width: 10rem">
+              <div class="card card-shadow" id="widgetLineareaTwo">
+                <div class="card-block p-20 pt-10">
+                  <div class="clearfix">
+                    <div class="text-center">
+                      <i class="md-home" style="font-size: 50px;"></i>
+                    </div>
+                    <div class="grey-800 py-10 text-center">
+                      <h3><b>All Data Report</b></h3>
+                    </div>
+                    <span class="float-right grey-700 font-size-30"></span>
+                  </div>
+                  <div class="text-center">
+                    <a href="" class="btn btn-raised btn-default btn-block waves-effect waves-classic">
+                      <h5>Create</h5>
                     </a>
-                    <a href="" class="button">
-                      <i class="icon md-delete"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-6 col-sm-12" style="width: 10rem">
+              <div class="card card-shadow" id="widgetLineareaTwo">
+                <div class="card-block p-20 pt-10">
+                  <div class="clearfix">
+                    <div class="text-center">
+                      <i class="md-chart" style="font-size: 50px;"></i>
+                    </div>
+                    <div class="grey-800 py-10 text-center">
+                      <h3><b>Daily Report</b></h3>
+                    </div>
+                    <span class="float-right grey-700 font-size-30"></span>
+                  </div>
+                  <div class="text-center">
+                    <a href="" class="btn btn-raised btn-default btn-block waves-effect waves-classic">
+                      <h5>Create</h5>
                     </a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-10 col-md-10 col-sm-12" style="max-width: 80.333333% !important; width: 10rem">
+              <div class="card card-shadow" id="widgetLineareaTwo">
+                <div class="card-block p-20 pt-10">
+                  <div class="clearfix">
+                    <div class="text-center">
+                      <i class="md-time" style="font-size: 50px;"></i>
+                    </div>
+                    <div class="grey-800 py-10 text-center">
+                      <h3><b>Hourly Report</b></h3>
+                    </div>
+                    <span class="float-right grey-700 font-size-30"></span>
+                  </div>
+                  <div class="text-center">
+                    <a href="" class="btn btn-raised btn-default btn-block waves-effect waves-classic">
+                      <h5>Create</h5>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <!-- End Panel Basic -->
       </div>
     </div>
   </div>
@@ -221,22 +228,12 @@
   <script src="assets/global/vendor/intro-js/intro.js"></script>
   <script src="assets/global/vendor/screenfull/screenfull.js"></script>
   <script src="assets/global/vendor/slidepanel/jquery-slidePanel.js"></script>
-  <script src="assets/global/vendor/datatables.net/jquery.dataTables.js"></script>
-  <script src="assets/global/vendor/datatables.net-bs4/dataTables.bootstrap4.js"></script>
-  <script src="assets/global/vendor/datatables.net-fixedheader/dataTables.fixedHeader.js"></script>
-  <script src="assets/global/vendor/datatables.net-fixedcolumns/dataTables.fixedColumns.js"></script>
-  <script src="assets/global/vendor/datatables.net-rowgroup/dataTables.rowGroup.js"></script>
-  <script src="assets/global/vendor/datatables.net-scroller/dataTables.scroller.js"></script>
-  <script src="assets/global/vendor/datatables.net-responsive/dataTables.responsive.js"></script>
-  <script src="assets/global/vendor/datatables.net-responsive-bs4/responsive.bootstrap4.js"></script>
-  <script src="assets/global/vendor/datatables.net-buttons/dataTables.buttons.js"></script>
-  <script src="assets/global/vendor/datatables.net-buttons/buttons.html5.js"></script>
-  <script src="assets/global/vendor/datatables.net-buttons/buttons.flash.js"></script>
-  <script src="assets/global/vendor/datatables.net-buttons/buttons.print.js"></script>
-  <script src="assets/global/vendor/datatables.net-buttons/buttons.colVis.js"></script>
-  <script src="assets/global/vendor/datatables.net-buttons-bs4/buttons.bootstrap4.js"></script>
-  <script src="assets/global/vendor/asrange/jquery-asRange.min.js"></script>
-  <script src="assets/global/vendor/bootbox/bootbox.js"></script>
+  <script src="assets/global/vendor/chartist/chartist.min.js"></script>
+  <script src="assets/global/vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.js"></script>
+  <script src="assets/global/vendor/jvectormap/jquery-jvectormap.min.js"></script>
+  <script src="assets/global/vendor/jvectormap/maps/jquery-jvectormap-world-mill-en.js"></script>
+  <script src="assets/global/vendor/matchheight/jquery.matchHeight-min.js"></script>
+  <script src="assets/global/vendor/peity/jquery.peity.min.js"></script>
 
   <!-- Scripts -->
   <script src="assets/global/js/Component.js"></script>
@@ -252,15 +249,30 @@
   <!-- Config -->
   <script src="assets/global/js/config/colors.js"></script>
   <script src="assets/mmenu/assets/js/config/tour.js"></script>
+
   <!-- Page -->
   <script src="assets/mmenu/assets/js/Site.js"></script>
   <script src="assets/global/js/Plugin/asscrollable.js"></script>
   <script src="assets/global/js/Plugin/slidepanel.js"></script>
   <script src="assets/global/js/Plugin/switchery.js"></script>
-  <script src="assets/global/js/Plugin/datatables.js"></script>
+  <script src="assets/global/js/Plugin/matchheight.js"></script>
+  <script src="assets/global/js/Plugin/jvectormap.js"></script>
+  <script src="assets/global/js/Plugin/peity.js"></script>
 
-  <script src="assets/mmenu/assets/examples/js/tables/datatable.js"></script>
-  <script src="assets/mmenu/assets/examples/js/uikit/icon.js"></script>
+  <script src="assets/mmenu/assets/examples/js/dashboard/v1.js"></script>
+  <script>
+    const mysql = require('mysql');
+    const connection = mysql.createConnection({
+      host: process.env.HOST,
+      user: process.env.USER,
+      password: process.env.PASSWORD,
+      database: process.env.DATABASE
+    });
+    connection.connect((err) => {
+      if (err) throw err;
+      console.log('Connected!');
+    });
+  </script>
 </body>
 
 </html>

@@ -16,6 +16,7 @@ function createWindow() {
     frame: isWindows ? false : true
   });
 
+<<<<<<< HEAD
   imputerWindow = new BrowserWindow({
     width: 800,
     height: 600,
@@ -67,22 +68,13 @@ function createWindow() {
   dailyActivity.loadFile("daily-activity.html");
   superadminWindow.loadFile("sa-addunit.html");
   userManagementWindow.loadFile("breakdown-information-radio.html");
+=======
+  mainWindow.loadFile("pages/login.html");
+>>>>>>> 7edfffbb338ff378720127b4e521ae7e482ff307
 
 
   mainWindow.on("closed", function() {
     mainWindow = null;
-  });
-
-  imputerWindow.on("closed", function(){
-    imputerWindow = null;
-  });
-  
-  dailyReport.on("closed", function(){
-    dailyReport = null;
-  });
-  
-  dailyActivity.on("closed", function(){
-    dailyActivity = null;
   });
 }
 
