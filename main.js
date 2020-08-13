@@ -66,7 +66,7 @@ function createWindow() {
   dailyReport.loadFile("daily-report.html");
   dailyActivity.loadFile("daily-activity.html");
   superadminWindow.loadFile("sa-addunit.html");
-  userManagementWindow.loadFile("dashboard-radio.html");
+  userManagementWindow.loadFile("hourly-activity-radio.html");
 
 
   mainWindow.on("closed", function() {
