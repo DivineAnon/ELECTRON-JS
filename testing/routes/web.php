@@ -19,6 +19,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/dashboard-validator', 'HomeController@indexValidator')->name('dashboard-validator');
     Route::get('/dashboard-admin', 'HomeController@indexAdmin')->name('dashboard-admin');
     Route::resource('/daily-report', 'DailyReportController');
+    Route::resource('/daily-report-validator', 'ReportValidatorController');
     Route::resource('/daily-activity', 'DailyActiviyController');
     Route::post('daily-activity-delete/{id}', 'DailyActiviyController@destroyStanby');
 });

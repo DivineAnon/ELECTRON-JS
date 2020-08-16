@@ -2,20 +2,20 @@
 <html class="no-js css-menubar" lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui" />
-  <meta name="description" content="bootstrap material admin template" />
-  <meta name="author" content="" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui" />
+    <meta name="description" content="bootstrap material admin template" />
+    <meta name="author" content="" />
 
-  <title>BODC CYBER APPS | IMPUTER</title>
+    <title>BODC CYBER APPS | IMPUTER</title>
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
-  <link rel="apple-touch-icon" href="../../assets/mmenu/assets/images/apple-touch-icon.png">
-  <link rel="shortcut icon" href="../../assets/mmenu/assets/images/favicon.ico">
+    <link rel="apple-touch-icon" href="../../assets/mmenu/assets/images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="../../assets/mmenu/assets/images/favicon.ico">
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="{{asset("global/css/bootstrap.min.css")}}">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="{{asset("global/css/bootstrap.min.css")}}">
     <link rel="stylesheet" href="{{asset("global/css/bootstrap-extend.min.css")}}">
     <link rel="stylesheet" href="{{asset("mmenu/assets/css/site.min.css")}}">
 
@@ -60,160 +60,161 @@
 </head>
 
 <body class="animsition site-navbar-small dashboard">
-  <nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega" role="navigation">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggler hamburger hamburger-close navbar-toggler-left hided"
-        data-toggle="menubar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="hamburger-bar"></span>
-      </button>
-      <button type="button" class="navbar-toggler collapsed" data-target="#site-navbar-collapse" data-toggle="collapse">
-        <i class="icon md-more" aria-hidden="true"></i>
-      </button>
-      <div class="navbar-brand navbar-brand-center site-gridmenu-toggle" data-toggle="gridmenu">
-        <img class="navbar-brand-logo" src="../../assets/mmenu/assets/images/logo.png" title="Remark" />
-        <span class="navbar-brand-text hidden-xs-down">BODC APPS</span>
-      </div>
-    </div>
-
-    <div class="navbar-container container-fluid">
-      <!-- Navbar Collapse -->
-      <div class="collapse navbar-collapse navbar-collapse-toolbar" id="site-navbar-collapse">
-        <!-- Navbar Toolbar -->
-        <ul class="nav navbar-toolbar">
-          <li class="nav-item hidden-float" id="toggleMenubar">
-            <a class="nav-link" data-toggle="menubar" href="#" role="button">
-              <i class="icon hamburger hamburger-arrow-left">
-                <span class="sr-only">Toggle menubar</span>
+    <nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggler hamburger hamburger-close navbar-toggler-left hided"
+                data-toggle="menubar">
+                <span class="sr-only">Toggle navigation</span>
                 <span class="hamburger-bar"></span>
-              </i>
-            </a>
-          </li>
-          <li class="nav-item hidden-sm-down" id="toggleFullscreen">
-            <a class="nav-link icon icon-fullscreen" data-toggle="fullscreen" href="#" role="button">
-              <span class="sr-only">Toggle fullscreen</span>
-            </a>
-          </li>
-        </ul>
-        <!-- End Navbar Toolbar -->
-        <!-- Navbar Toolbar Right -->
-        <ul class="nav navbar-toolbar navbar-right navbar-toolbar-right">
-          <li class="nav-item dropdown">
-            <a class="nav-link navbar-avatar" data-toggle="dropdown" href="#" aria-expanded="false"
-              data-animation="scale-up" role="button">
-              <span class="avatar avatar-online">
-                <img src="../../assets/global/portraits/5.jpg" alt="..." />
-                <i></i>
-              </span>
-            </a>
-            <div class="dropdown-menu" role="menu">
-              <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon md-account"
-                  aria-hidden="true"></i> User</a>
-              <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon md-accounts-list"
-                  aria-hidden="true"></i> Data Imputer</a>
-              <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon md-calendar"
-                  aria-hidden="true"></i> 15 April 2020</a>
-              <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon md-power"
-                  aria-hidden="true"></i> Logout</a>
+            </button>
+            <button type="button" class="navbar-toggler collapsed" data-target="#site-navbar-collapse"
+                data-toggle="collapse">
+                <i class="icon md-more" aria-hidden="true"></i>
+            </button>
+            <div class="navbar-brand navbar-brand-center site-gridmenu-toggle" data-toggle="gridmenu">
+                <img class="navbar-brand-logo" src="{{asset("mmenu/assets/images/logo.png")}}" title="Remark" />
+                <span class="navbar-brand-text hidden-xs-down">BODC APPS</span>
             </div>
-          </li>
-        </ul>
-        <!-- End Navbar Toolbar Right -->
-      </div>
-      <!-- End Navbar Collapse -->
-    </div>
-  </nav>
-  <div class="site-menubar">
-    <ul class="site-menu">
-      <li class="site-menu-item active">
-        <a class="animsition-link" href="index.html">
-          <i class="site-menu-icon icon md-home" style="font-size: 20px" aria-hidden="true"></i>
-          <span class="site-menu-title">All Data Report</span>
-        </a>
-      </li>
-      <li class="site-menu-item has-sub">
-        <a href="javascript:void(0)">
-          <i class="site-menu-icon icon md-chart" style="font-size: 20px" aria-hidden="true"></i>
-          <span class="site-menu-title">Daily Report</span>
-        </a>
-      </li>
-      <li class="site-menu-item has-sub">
-        <a href="javascript:void(0)">
-          <i class="site-menu-icon icon md-time" style="font-size: 20px" aria-hidden="true"></i>
-          <span class="site-menu-title">Hourly Report</span>
-        </a>
-      </li>
-    </ul>
-  </div>
+        </div>
 
-  <!-- Page -->
-  <div class="page">
-    <div class="page-content container-fluid">
-      <div class="row" data-plugin="matchHeight" data-by-row="true">
-        <div class="col-xl-12 col-md-12 text-left mb-15">
-          <h2 style="color: #000000; margin-left: 65px;"><b>DAILY REPORT (TIMESHEET)</b></h2>
+        <div class="navbar-container container-fluid">
+            <!-- Navbar Collapse -->
+            <div class="collapse navbar-collapse navbar-collapse-toolbar" id="site-navbar-collapse">
+                <!-- Navbar Toolbar -->
+                <ul class="nav navbar-toolbar">
+                    <li class="nav-item hidden-float" id="toggleMenubar">
+                        <a class="nav-link" data-toggle="menubar" href="#" role="button">
+                            <i class="icon hamburger hamburger-arrow-left">
+                                <span class="sr-only">Toggle menubar</span>
+                                <span class="hamburger-bar"></span>
+                            </i>
+                        </a>
+                    </li>
+                    <li class="nav-item hidden-sm-down" id="toggleFullscreen">
+                        <a class="nav-link icon icon-fullscreen" data-toggle="fullscreen" href="#" role="button">
+                            <span class="sr-only">Toggle fullscreen</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- End Navbar Toolbar -->
+                <!-- Navbar Toolbar Right -->
+                <ul class="nav navbar-toolbar navbar-right navbar-toolbar-right">
+                    <li class="nav-item dropdown">
+                        <a href="{{ route('dashboard-validator') }}" class="nav-link waves-effect waves-light waves-round">
+                            <i class="icon md-arrow-left" style="font-size: 20px;">&nbsp;Back</i>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link navbar-avatar" data-toggle="dropdown" href="#" aria-expanded="false"
+                            data-animation="scale-up" role="button">
+                            <span class="avatar avatar-online">
+                                <img src="{{asset("global/portraits/5.jpg")}}" alt="..." />
+                                <i></i>
+                            </span>
+                        </a>
+                        <div class="dropdown-menu" role="menu">
+                            <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i
+                                    class="icon md-account" aria-hidden="true"></i> {{ auth()->user()->name }}</a>
+                            <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i
+                                    class="icon md-accounts-list" aria-hidden="true"></i> {{ auth()->user()->username }}</a>
+                            <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i
+                                    class="icon md-calendar" aria-hidden="true"></i> {{  now()->toDateString('YYYY-mm-dd') }}</a>
+                            <a class="dropdown-item" href="{{ route('web.logout') }}" role="menuitem"><i class="icon md-power"
+                                    aria-hidden="true"></i> Logout</a>
+                        </div>
+                    </li>
+                </ul>
+                <!-- End Navbar Toolbar Right -->
+            </div>
+            <!-- End Navbar Collapse -->
         </div>
-      </div>
-      <div class="container">
-        <form class="form-inline mb-20">
-          <p style="color: #000000; margin-left: 50px; margin-top: 10px !important; margin-right: 5px;">nomor unit :</p>
-          <input type="text" class="form-control" name="type_numberic" placeholder="nomor unit"
-            style="margin-right: 5px;">
-          <a href="" class="btn btn-raised btn-primary btn-block waves-effect waves-classic" style="width: 10%;">
-            Search
-          </a>
-        </form>
-        <p style="color: #000000; margin-left: 45px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
-          accusamus corporis sequi in reiciendis minus
-          doloribus harum quisquam deleniti libero velit, facere fugit at sunt nesciunt earum placeat quo rem!</p>
-      </div>
-      <div class="page-content">
-        <!-- Panel Basic -->
-        <div class="panel" style="margin-left: 30px;">
-          <header class="panel-heading text-center">
-            <div class="panel-actions"></div>
-            <h1 class="panel-title" style="background:#0267ca; color: #fff; font-size: large; text-align: left;">Unit
-              Status</h1>
-          </header>
-          <div class="panel-body mt-10">
-            <table class="table table-hover dataTable table-striped w-full" data-plugin="dataTable">
-              <thead>
-                <tr>
-                  <th>Unit</th>
-                  <th>Proses</th>
-                  <th>Aktivitas</th>
-                  <th>Loading Point</th>
-                  <th>Dumping Area</th>
-                  <th>Total Ritasi</th>
-                  <th>Status</th>
-                  <th>action</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Damon</td>
-                  <td>5516 Adolfo Green</td>
-                  <td>Littelhaven</td>
-                  <td>85</td>
-                  <td>2014/06/13</td>
-                  <td>$553,536</td>
-                  <td>$553,536</td>
-                  <td>
-                    <a href="" class="button mr-10">
-                      <i class="icon md-edit"></i>
-                    </a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-        <!-- End Panel Basic -->
-      </div>
+    </nav>
+    <div class="site-menubar">
+        <ul class="site-menu">
+            <li class="site-menu-item active">
+                <a class="animsition-link" href="index.html">
+                    <i class="site-menu-icon icon md-home" style="font-size: 20px" aria-hidden="true"></i>
+                    <span class="site-menu-title">All Data Report</span>
+                </a>
+            </li>
+            <li class="site-menu-item has-sub">
+                <a href="{{ route('daily-report-validator')}}">
+                    <i class="site-menu-icon icon md-chart" style="font-size: 20px" aria-hidden="true"></i>
+                    <span class="site-menu-title">Daily Report</span>
+                </a>
+            </li>
+            <li class="site-menu-item has-sub">
+                <a href="javascript:void(0)">
+                    <i class="site-menu-icon icon md-time" style="font-size: 20px" aria-hidden="true"></i>
+                    <span class="site-menu-title">Hourly Report</span>
+                </a>
+            </li>
+        </ul>
     </div>
-  </div>
-  <!-- End Page -->
-  <!-- Core  -->
+
+    <!-- Page -->
+    <div class="page">
+        <div class="page-content container-fluid">
+            <div class="row" data-plugin="matchHeight" data-by-row="true">
+                <div class="col-xl-12 col-md-12 text-left mb-15">
+                    <h2 style="color: #000000; margin-left: 65px;"><b>DAILY REPORT (TIMESHEET)</b></h2>
+                </div>
+            </div>
+            <div class="container">
+                <p style="color: #000000; margin-left: 45px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Nemo
+                    accusamus corporis sequi in reiciendis minus
+                    doloribus harum quisquam deleniti libero velit, facere fugit at sunt nesciunt earum placeat quo rem!
+                </p>
+            </div>
+            <div class="page-content">
+                <!-- Panel Basic -->
+                <div class="panel" style="margin-left: 30px;">
+                    <header class="panel-heading text-center">
+                        <div class="panel-actions"></div>
+                        <h1 class="panel-title"
+                            style="background:#0267ca; color: #fff; font-size: large; text-align: left;">Unit
+                            Status</h1>
+                    </header>
+                    <div class="panel-body mt-10">
+                        <table class="table table-hover dataTable table-striped w-full" data-plugin="dataTable">
+                            <thead>
+                                <tr>
+                                    <th>Unit</th>
+                                    <th>Proses</th>
+                                    <th>Aktivitas</th>
+                                    <th>Loading Point</th>
+                                    <th>Dumping Area</th>
+                                    <th>Total Ritasi</th>
+                                    <th>Status</th>
+                                    <th>action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Damon</td>
+                                    <td>5516 Adolfo Green</td>
+                                    <td>Littelhaven</td>
+                                    <td>85</td>
+                                    <td>2014/06/13</td>
+                                    <td>$553,536</td>
+                                    <td>$553,536</td>
+                                    <td>
+                                        <a href="" class="button mr-10">
+                                            <i class="icon md-edit"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- End Panel Basic -->
+            </div>
+        </div>
+    </div>
+    <!-- End Page -->
+    <!-- Core  -->
     <script src="{{asset("global/vendor/babel-external-helpers/babel-external-helpers.js")}}"></script>
     <script src="{{asset("global/vendor/jquery/jquery.js")}}"></script>
     <script src="{{asset("global/vendor/popper-js/umd/popper.min.js")}}"></script>
