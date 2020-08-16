@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\ReportValidator;
 use Illuminate\Http\Request;
+use DB;
+use App\Activity;
 
 class ReportValidatorController extends Controller
 {

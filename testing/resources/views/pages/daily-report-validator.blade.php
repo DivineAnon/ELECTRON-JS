@@ -100,7 +100,8 @@
                 <!-- Navbar Toolbar Right -->
                 <ul class="nav navbar-toolbar navbar-right navbar-toolbar-right">
                     <li class="nav-item dropdown">
-                        <a href="{{ route('dashboard-validator') }}" class="nav-link waves-effect waves-light waves-round">
+                        <a href="{{ route('dashboard-validator') }}"
+                            class="nav-link waves-effect waves-light waves-round">
                             <i class="icon md-arrow-left" style="font-size: 20px;">&nbsp;Back</i>
                         </a>
                     </li>
@@ -116,11 +117,13 @@
                             <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i
                                     class="icon md-account" aria-hidden="true"></i> {{ auth()->user()->name }}</a>
                             <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i
-                                    class="icon md-accounts-list" aria-hidden="true"></i> {{ auth()->user()->username }}</a>
+                                    class="icon md-accounts-list" aria-hidden="true"></i>
+                                {{ auth()->user()->username }}</a>
                             <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i
-                                    class="icon md-calendar" aria-hidden="true"></i> {{  now()->toDateString('YYYY-mm-dd') }}</a>
-                            <a class="dropdown-item" href="{{ route('web.logout') }}" role="menuitem"><i class="icon md-power"
-                                    aria-hidden="true"></i> Logout</a>
+                                    class="icon md-calendar" aria-hidden="true"></i>
+                                {{  now()->toDateString('YYYY-mm-dd') }}</a>
+                            <a class="dropdown-item" href="{{ route('web.logout') }}" role="menuitem"><i
+                                    class="icon md-power" aria-hidden="true"></i> Logout</a>
                         </div>
                     </li>
                 </ul>
@@ -177,6 +180,11 @@
                             Status</h1>
                     </header>
                     <div class="panel-body mt-10">
+                        @if ($message = Session::get('success'))
+                        <div class="alert alert-success">
+                            <p>{{$message}}</p>
+                        </div>
+                        @endif
                         <table class="table table-hover dataTable table-striped w-full" data-plugin="dataTable">
                             <thead>
                                 <tr>
@@ -191,20 +199,24 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                {{csrf_field()}}
+                                @foreach ($activities as $activity)
                                 <tr>
-                                    <td>Damon</td>
-                                    <td>5516 Adolfo Green</td>
-                                    <td>Littelhaven</td>
-                                    <td>85</td>
-                                    <td>2014/06/13</td>
-                                    <td>$553,536</td>
-                                    <td>$553,536</td>
+                                    <td>{{ $activity->no_unit }}</td>
+                                    <td>{{ $activity->id_proses }}</td>
+                                    <td>{{ $activity->id_aktifitas }}</td>
+                                    <td>{{ $activity->loading_point }}</td>
+                                    <td>{{ $activity->dumping_area }}</td>
+                                    <td>{{ $activity->total_ritasi }}</td>
+                                    <td>{{ $activity->status }}</td>
                                     <td>
-                                        <a href="" class="button mr-10">
+                                        <a href="{{ route('daily-report.update', $activity->no_unit) }}"
+                                            class="button mr-10" data-id="{{$activity->no_unit}}">
                                             <i class="icon md-edit"></i>
                                         </a>
                                     </td>
                                 </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>
