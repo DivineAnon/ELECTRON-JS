@@ -16,12 +16,10 @@
   <link rel="stylesheet" type="text/css" href="../assets/css/util.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
 </head>
-</head>
 
 <body>
   <div id="menu-bar">
     <div class="left" role="menu">
-      <!-- <button class="menubar-btn" id="menu-btn"><i class="fa fa-bars"></i></button> -->
       <h3 style="color: #ffffff;">&nbsp;WELCOME TO BODC</h3>
     </div>
     <div class="right">
@@ -59,7 +57,7 @@
           </div>
 
           <div class="container-login100-form-btn">
-            <a href="./Imputer/dashboard-imputer.html" class="login100-form-btn" id="login">Login</a>
+            <a href="./Imputer/dashboard-imputer.html" class="login100-form-btn" id="login" type="submit">Login</a>
           </div>
         </form>
       </div>
@@ -68,31 +66,12 @@
 
   <!-- You can also require other files to run in this process -->
   <script src="../renderer.js"></script>
-  <script src="../login.js"></script>
   <script src="../assets/vendor/jquery/jquery-3.2.1.min.js"></script>
   <script src="../assets/vendor/bootstrap/js/popper.js"></script>
   <script src="../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
   <script src="../assets/vendor/select2/select2.min.js"></script>
   <script src="../assets/vendor/tilt/tilt.jquery.min.js"></script>
-  <script>
-    $('.js-tilt').tilt({
-      scale: 1.1
-    })
-  </script>
   <script src="../assets/js/main.js"></script>
-  <script>
-    const mysql = require('mysql');
-    const connection = mysql.createConnection({
-      host: process.env.HOST,
-      user: process.env.USER,
-      password: process.env.PASSWORD,
-      database: process.env.DATABASE
-    });
-    connection.connect((err) => {
-      if (err) throw err;
-      console.log('Connected!');
-    });
-  </script>
 </body>
 
 </html>

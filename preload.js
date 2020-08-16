@@ -12,7 +12,7 @@ const {
 
 window.addEventListener("DOMContentLoaded", () => {
   window.getCurrentWindow = getCurrentWindow;
-  window.openMenu = openMenu;
+  // window.openMenu = openMenu;
   window.minimizeWindow = minimizeWindow;
   window.maximizeWindow = maximizeWindow;
   window.unmaximizeWindow = unmaximizeWindow;
