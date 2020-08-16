@@ -138,7 +138,7 @@
                 </a>
             </li>
             <li class="site-menu-item has-sub">
-                <a href="{{ route('daily-report-validator')}}">
+                <a href="{{ route('daily-report-validator.index')}}">
                     <i class="site-menu-icon icon md-chart" style="font-size: 20px" aria-hidden="true"></i>
                     <span class="site-menu-title">Daily Report</span>
                 </a>

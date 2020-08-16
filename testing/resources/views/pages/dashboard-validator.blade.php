@@ -121,7 +121,7 @@
                 </a>
             </li>
             <li class="site-menu-item has-sub">
-                <a href="{{ route('daily-report-validator') }}">
+                <a href="{{ route('daily-report-validator.index') }}">
                     <i class="site-menu-icon icon md-chart" style="font-size: 20px" aria-hidden="true"></i>
                     <span class="site-menu-title">Daily Report</span>
                 </a>
@@ -179,7 +179,7 @@
                                         <span class="float-right grey-700 font-size-30"></span>
                                     </div>
                                     <div class="text-center">
-                                        <a href="{{ route('daily-report-validator') }}"
+                                        <a href="{{ route('daily-report-validator.index') }}"
                                             class="btn btn-raised btn-default btn-block waves-effect waves-classic">
                                             <h5>Create</h5>
                                         </a>
