@@ -210,7 +210,7 @@
                                     <td>{{ $activity->total_ritasi }}</td>
                                     <td>{{ $activity->status }}</td>
                                     <td>
-                                        <a href="{{ route('daily-report.update', $activity->no_unit) }}"
+                                        <a href="{{ route('daily-report-validator.update', $activity->no_unit) }}"
                                             class="button mr-10" data-id="{{$activity->no_unit}}">
                                             <i class="icon md-edit"></i>
                                         </a>

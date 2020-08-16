@@ -82,9 +82,10 @@ class ReportValidatorController extends Controller
      * @param  \App\ReportValidator  $reportValidator
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, ReportValidator $reportValidator)
+    public function update(Request $request, $id)
     {
-        //
+        $activity = Activity::find($id);
+        return view('pages.activity-validator.index', compact('activity'));
     }
 
     /**
