@@ -508,7 +508,7 @@
                                 <div class="panel-actions">
                                     <button type="button" class="btn"
                                         style="background:#0267ca; color: #fff; width: 5rem;" data-toggle="modal"
-                                        data-target="#datastanby">+</button>
+                                        data-target="#datastanby">Add</button>
                                 </div>
                             </header>
                             <div class="panel-body mt-10">
@@ -551,19 +551,10 @@
                                             <td>{{ $stanby_time->keterangan  }}</td>
                                             <td>{{ $stanby_time->breakdown }}</td>
                                             <td>
-                                                {{-- <form action="{{ url('daily-activity-delete', $stanby_time->id) }}"
-                                                method="POST"> --}}
                                                 <a href="{{ route('daily-activity.update', $stanby_time->id) }}"
                                                     class="button mr-10">
                                                     <i class="icon md-edit"></i>
                                                 </a>
-                                                {{-- @csrf
-                                                    @method('DELETE')
-                                                    <button class="button" data-original-title="Delete"
-                                                        data-id="{{$stanby_time->id}}">
-                                                <i class="icon md-delete"></i>
-                                                </button> --}}
-                                                {{-- </form> --}}
                                             </td>
                                         </tr>
                                         @endforeach
@@ -573,6 +564,79 @@
                         </div>
                         <!-- End Panel Basic -->
                     </div>
+                    <!-- Modal Data Unit -->
+                    <div class="modal fade" id="datastanby" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header" style="background: #80808038;">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Standby Time</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <label>Standby Code:</label>
+                                                    <input name="id_stanby" type="text" class="form-control" name="" readonly>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <label>Start Time:</label>
+                                                    <input name="start_time_1" type="text" class="form-control" name="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <label>End Time:</label>
+                                                    <input name="end_time_1" type="text" class="form-control" name="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <label>Keterangan:</label>
+                                                    <input type="text" class="form-control" name="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <label>Brand:</label>
+                                                    <input type="text" class="form-control" name="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <label>Owner:</label>
+                                                    <input type="text" class="form-control" name="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <button type="submit" style="width: 100%;"
+                                                    class="btn btn-primary">Save</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal Data Unit End -->
                 </div>
             </div>
         </div>
@@ -727,7 +791,7 @@
             $("select.aktivitas").change(function () {
                 var selectedCountry = $(this).children("option:selected").text();
                 document.getElementById("id_aktifitas").innerHTML = "Kode Aktivitas: " +
-                selectedCountry;
+                    selectedCountry;
                 // alert("You have selected the country - " + selectedCountry);
             });
         });
