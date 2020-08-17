@@ -480,11 +480,13 @@
                                             </div>
                                             <div class="col-12 col-md-8 col-sm-12"><a href=""
                                                     class="btn btn-raised btn-primary btn-block waves-effect waves-classic"
-                                                    style="width: 30%;margin-top: 10px; margin-left: 100px;">
+                                                    style="width: 30%;margin-top: 10px; margin-left: 100px;"
+                                                    data-toggle="modal" data-target="#dataritasi">
                                                     Add Ritasi
                                                 </a></div>
                                         </div>
                                     </div>
+
                                     <div class="col-12 col-md-12 col-sm-12 mt-20">
                                         <a href=""
                                             class="btn btn-raised btn-primary btn-block waves-effect waves-classic"
@@ -581,12 +583,13 @@
                                             <div class="col-lg-12">
                                                 <div class="form-group">
                                                     <label>Standby Code:</label>
-                                                    <input name="id_stanby" type="text" class="form-control" name="" readonly>
+                                                    <input name="id_stanby" type="text" class="form-control" name=""
+                                                        readonly>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-lg-12">
+                                            <div class="col-lg-6">
                                                 <div class="form-group">
                                                     <label>Start Time:</label>
                                                     <input name="start_time_1" type="text" class="form-control" name="">
@@ -594,7 +597,7 @@
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-lg-12">
+                                            <div class="col-lg-6">
                                                 <div class="form-group">
                                                     <label>End Time:</label>
                                                     <input name="end_time_1" type="text" class="form-control" name="">
@@ -602,26 +605,193 @@
                                             </div>
                                         </div>
                                         <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label>Start Time:</label>
+                                                    <input name="start_time_2" type="text" class="form-control" name="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label>End Time:</label>
+                                                    <input name="end_time_2" type="text" class="form-control" name="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label>Start Time:</label>
+                                                    <input name="start_time_3" type="text" class="form-control" name="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label>End Time:</label>
+                                                    <input name="end_time_3" type="text" class="form-control" name="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label>Start Time:</label>
+                                                    <input name="start_time_4" type="text" class="form-control" name="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label>End Time:</label>
+                                                    <input name="end_time_4" type="text" class="form-control" name="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
                                             <div class="col-lg-12">
                                                 <div class="form-group">
                                                     <label>Keterangan:</label>
-                                                    <input type="text" class="form-control" name="">
+                                                    <input name="keterangan" type="text" class="form-control" name="">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-lg-12">
                                                 <div class="form-group">
-                                                    <label>Brand:</label>
-                                                    <input type="text" class="form-control" name="">
+                                                    <label>Breakdown:</label>
+                                                    <select name="breakdown" data-plugin="selectpicker"
+                                                        style="width: 70%; margin-top: 10px;">
+                                                        <option value="SCM">SCM</option>
+                                                        <option value="USM">USM</option>
+                                                        <option value="TRM">TRM</option>
+                                                        <option value="ICM">ICM</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <button type="submit" style="width: 100%;"
+                                                    class="btn btn-primary">Save</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal Data Unit End -->
+
+                    <!-- Modal Data Unit -->
+                    <div class="modal fade" id="dataritasi" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header" style="background: #80808038;">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Ritasi</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <label>Standby Code:</label>
+                                                    <input name="id_stanby" type="text" class="form-control" name=""
+                                                        readonly>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label>Start Time:</label>
+                                                    <input name="start_time_1" type="text" class="form-control" name="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label>End Time:</label>
+                                                    <input name="end_time_1" type="text" class="form-control" name="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label>Start Time:</label>
+                                                    <input name="start_time_2" type="text" class="form-control" name="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label>End Time:</label>
+                                                    <input name="end_time_2" type="text" class="form-control" name="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label>Start Time:</label>
+                                                    <input name="start_time_3" type="text" class="form-control" name="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label>End Time:</label>
+                                                    <input name="end_time_3" type="text" class="form-control" name="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label>Start Time:</label>
+                                                    <input name="start_time_4" type="text" class="form-control" name="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label>End Time:</label>
+                                                    <input name="end_time_4" type="text" class="form-control" name="">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-lg-12">
                                                 <div class="form-group">
-                                                    <label>Owner:</label>
-                                                    <input type="text" class="form-control" name="">
+                                                    <label>Keterangan:</label>
+                                                    <input name="keterangan" type="text" class="form-control" name="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <label>Breakdown:</label>
+                                                    <select name="breakdown" data-plugin="selectpicker"
+                                                        style="width: 70%; margin-top: 10px;">
+                                                        <option value="SCM">SCM</option>
+                                                        <option value="USM">USM</option>
+                                                        <option value="TRM">TRM</option>
+                                                        <option value="ICM">ICM</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                         </div>
