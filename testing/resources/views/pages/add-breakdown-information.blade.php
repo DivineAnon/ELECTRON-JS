@@ -175,7 +175,7 @@
       <!-- Panel Basic -->
       <div class="panel" style="margin-left: 30px;">
         <div class="panel-body">
-          <div class="card-block">      
+          <div class="card-block">
            <form action="" class="form-inline">
             <div class="col-lg-6 col-md-12 col-sm-12">
              <div class="row">
@@ -272,7 +272,7 @@
               </div>
              </div>
             </div>
-            </form>          
+            </form>
           </div>
           <div class="card-block">
             <header class="panel-heading text-center">
