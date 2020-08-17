@@ -63,7 +63,7 @@ class DailyReportController extends Controller
     public function update(Request $request, $id)
     {
         $activity = Activity::find($id);
-        return view('pages.daily-activity.index', compact('activity'));
+        return view('pages.daily-activity', compact('activity'));
     }
 
     public function destroy($id)

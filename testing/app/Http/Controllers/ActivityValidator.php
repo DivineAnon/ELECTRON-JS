@@ -11,7 +11,7 @@ class ActivityValidator extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($id)
+    public function index()
     {
         //
     }
