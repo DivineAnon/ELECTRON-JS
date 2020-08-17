@@ -404,10 +404,12 @@
                                             </div>
                                             <div class="col-12 col-md-8 col-sm-12">
                                                 <select data-plugin="selectpicker"
-                                                    style="width: 50%; margin-top: 10px;">
-                                                    <option>Mustard</option>
-                                                    <option>Ketchup</option>
-                                                    <option>Relish</option>
+                                                    style="width: 50%; margin-top: 10px;" name="loader">
+                                                    <option>Loader</option>
+                                                    <option>Hauler</option>
+                                                    <option>Dozer</option>
+                                                    <option>Tower Lamp</option>
+                                                    <option>Light Vehicle</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -583,7 +585,7 @@
                                             <div class="col-lg-12">
                                                 <div class="form-group">
                                                     <label>Standby Code:</label>
-                                                    <input name="id_stanby" type="text" class="form-control" name=""
+                                                    <input name="id_stanby" type="text" class="form-control" name="" value="(D01) P2H" placeholder="(D01) P2H "
                                                         readonly>
                                                 </div>
                                             </div>
@@ -705,7 +707,7 @@
                                                 <div class="form-group">
                                                     <label>Standby Code:</label>
                                                     <input name="id_stanby" type="text" class="form-control" name=""
-                                                        readonly>
+                                                        readonly value="">
                                                 </div>
                                             </div>
                                         </div>

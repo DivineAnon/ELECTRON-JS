@@ -21,7 +21,6 @@ class DailyActiviyController extends Controller
     public function index()
     {
         $stanby_status = StandbyStatus::join('activity', 'activity.no_unit', '=', 'stanby_status.id_activity')->join('stanby', 'stanby.id', '=', 'stanby_status.id_stanby')->select('stanby_status.*', 'stanby.kode', 'activity.no_unit')->get();
-        $breakdowns = BreakdownRadio::join('unit_status', 'unit_status.no_unit', '=', 'breakdown_radio.no_unit')->join('type_unit', 'type_unit.id', '=', 'breakdown_radio.id_type_unit')->select('breakdown_radio.*', 'unit_status.no_unit', 'type_unit.nama')->where('id');
         $operators = Operator::all();
         $prosess = Proses::all();
         $materials = Material::all();
@@ -38,8 +37,9 @@ class DailyActiviyController extends Controller
             }
         }
         echo $units;
+        $breakdown_loaders = BreakdownRadio::join('type_unit', 'type_unit.id', '=', 'breakdown_radio.id_type_unit')->select('breakdown_radio.*', 'type_unit.nama')->where('no_unit', $units)->first();
 
-        return view('pages.daily-activity', compact('stanby_status', 'units', 'operators', 'materials', 'aktifitas', 'stanbys', 'prosess'));
+        return view('pages.daily-activity', compact('stanby_status', 'units', 'operators', 'materials', 'aktifitas', 'stanbys', 'prosess', 'breakdown_loaders'));
     }
 
     public function create()
