@@ -24,10 +24,10 @@ DROP TABLE IF EXISTS `activity`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `activity` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `id_user` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci DEFAULT NULL,
+  `id_user` varchar(255) DEFAULT NULL,
   `id_operator` int DEFAULT NULL,
   `id_proses` varchar(255) DEFAULT NULL,
-  `id_aktifitas` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci DEFAULT NULL,
+  `id_aktifitas` varchar(255) DEFAULT NULL,
   `id_material` varchar(255) DEFAULT NULL,
   `tgl_aktifitas` date DEFAULT NULL,
   `no_unit` int DEFAULT NULL,
@@ -281,8 +281,8 @@ DROP TABLE IF EXISTS `operator`;
 CREATE TABLE `operator` (
   `id` int NOT NULL AUTO_INCREMENT,
   `nrp` int DEFAULT NULL,
-  `first_name` varchar(45) CHARACTER SET latin1 COLLATE latin1_swedish_ci DEFAULT NULL,
-  `last_name` varchar(45) CHARACTER SET latin1 COLLATE latin1_swedish_ci DEFAULT NULL,
+  `first_name` varchar(45) DEFAULT NULL,
+  `last_name` varchar(45) DEFAULT NULL,
   `tempat_lahir` varchar(45) DEFAULT NULL,
   `tgl_lahir` date DEFAULT NULL,
   `unit_field` varchar(45) DEFAULT NULL,
