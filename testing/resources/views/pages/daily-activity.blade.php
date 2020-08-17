@@ -200,8 +200,8 @@
                                     </p>
                                 </div>
                                 <div class="col-12 col-md-10 col-sm-12">
-                                    <select data-plugin="selectpicker" style="width: 75%; margin-top: 10px;"
-                                        name="id_proses">
+                                    <select class="proses" data-plugin="selectpicker"
+                                        style="width: 75%; margin-top: 10px;" name="id_proses">
                                         <option value="">Pilih</option>
                                         @foreach ($prosess as $proses)
                                         <option value="{{ $proses->id }}">{{ $proses->kode }}</option>
@@ -213,8 +213,8 @@
                                     </p>
                                 </div>
                                 <div class="col-12 col-md-10 col-sm-12">
-                                    <select data-plugin="selectpicker" style="width: 75%; margin-top: 10px;"
-                                        name="id_material">
+                                    <select class="material" data-plugin="selectpicker"
+                                        style="width: 75%; margin-top: 10px;" name="id_material">
                                         <option value="">Pilih</option>
                                         @foreach ($materials as $material)
                                         <option value="{{ $material->id }}">{{ $material->kode }}</option>
@@ -226,8 +226,8 @@
                                     </p>
                                 </div>
                                 <div class="col-12 col-md-10 col-sm-12">
-                                    <select data-plugin="selectpicker" style="width: 75%; margin-top: 10px;"
-                                        name="id_aktifitas">
+                                    <select class="aktivitas" data-plugin="selectpicker"
+                                        style="width: 75%; margin-top: 10px;" name="id_aktifitas">
                                         <option value="">Pilih</option>
                                         @foreach ($aktifitas as $activity)
                                         <option value="{{ $activity->id }}">{{ $activity->kode }}</option>
@@ -413,7 +413,7 @@
                                         </div>
                                     </div>
                                     <div class="col-12 col-md-6 col-sm-12">
-                                        <p>Kode Proses : 200</p>
+                                        <p id="id_proses">Kode Proses : 200</p>
                                     </div>
                                     <div class="col-12 col-md-6 col-sm-12">
                                         <div class="row">
@@ -431,7 +431,7 @@
                                         </div>
                                     </div>
                                     <div class="col-12 col-md-6 col-sm-12">
-                                        <p>Kode Unit : 200</p>
+                                        <p id="id_material">Kode Material : 200</p>
                                     </div>
                                     <div class="col-12 col-md-6 col-sm-12">
                                         <div class="row">
@@ -449,7 +449,7 @@
                                         </div>
                                     </div>
                                     <div class="col-12 col-md-6 col-sm-12">
-                                        <p>Kode Material : 200</p>
+                                        <p id="id_aktifitas">Kode Aktivitas : 200</p>
                                     </div>
                                     <div class="col-12 col-md-6 col-sm-12">
                                         <div class="row">
@@ -466,9 +466,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-12 col-md-6 col-sm-12">
-                                        <p>Kode Aktivitas : 200</p>
-                                    </div>
                                     <div class="col-12 col-md-6 col-sm-12 mt-10">
 
                                     </div>
@@ -483,8 +480,7 @@
                                             </div>
                                             <div class="col-12 col-md-8 col-sm-12"><a href=""
                                                     class="btn btn-raised btn-primary btn-block waves-effect waves-classic"
-                                                    style="width: 30%;
-                          margin-top: 10px; margin-left: 100px;">
+                                                    style="width: 30%;margin-top: 10px; margin-left: 100px;">
                                                     Add Ritasi
                                                 </a></div>
                                         </div>
@@ -509,6 +505,11 @@
                                     style="background:#0267ca; color: #fff; font-size: large; text-align: left;">
                                     Standby
                                     Status</h1>
+                                <div class="panel-actions">
+                                    <button type="button" class="btn"
+                                        style="background:#0267ca; color: #fff; width: 5rem;" data-toggle="modal"
+                                        data-target="#datastanby">+</button>
+                                </div>
                             </header>
                             <div class="panel-body mt-10">
                                 @if ($message = Session::get('success'))
@@ -551,16 +552,17 @@
                                             <td>{{ $stanby_time->breakdown }}</td>
                                             <td>
                                                 {{-- <form action="{{ url('daily-activity-delete', $stanby_time->id) }}"
-                                                    method="POST"> --}}
-                                                    <a href="{{ route('daily-activity.update', $stanby_time->id) }}" class="button mr-10">
-                                                        <i class="icon md-edit"></i>
-                                                    </a>
-                                                    {{-- @csrf
+                                                method="POST"> --}}
+                                                <a href="{{ route('daily-activity.update', $stanby_time->id) }}"
+                                                    class="button mr-10">
+                                                    <i class="icon md-edit"></i>
+                                                </a>
+                                                {{-- @csrf
                                                     @method('DELETE')
                                                     <button class="button" data-original-title="Delete"
                                                         data-id="{{$stanby_time->id}}">
-                                                        <i class="icon md-delete"></i>
-                                                    </button> --}}
+                                                <i class="icon md-delete"></i>
+                                                </button> --}}
                                                 {{-- </form> --}}
                                             </td>
                                         </tr>
@@ -707,6 +709,28 @@
     <script src="{{asset("mmenu/assets/examples/js/tables/datatable.js")}}"></script>
 
     <script>
+        $(document).ready(function () {
+            $("select.proses").change(function () {
+                var selectedCountry = $(this).children("option:selected").text();
+                document.getElementById("id_proses").innerHTML = "Kode Proses: " + selectedCountry;
+                // alert("You have selected the country - " + selectedCountry);
+            });
+        });
+        $(document).ready(function () {
+            $("select.material").change(function () {
+                var selectedCountry = $(this).children("option:selected").text();
+                document.getElementById("id_material").innerHTML = "Kode Material: " + selectedCountry;
+                // alert("You have selected the country - " + selectedCountry);
+            });
+        });
+        $(document).ready(function () {
+            $("select.aktivitas").change(function () {
+                var selectedCountry = $(this).children("option:selected").text();
+                document.getElementById("id_aktifitas").innerHTML = "Kode Aktivitas: " +
+                selectedCountry;
+                // alert("You have selected the country - " + selectedCountry);
+            });
+        });
         //delete post
         $(document).on('click', '.delete-modal', function () {
             $('.modal-title').text('Delete');
